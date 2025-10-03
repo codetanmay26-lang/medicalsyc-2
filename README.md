@@ -65,7 +65,7 @@ reset all demo data, use **Incognito mode** or manually clear browser storage.
 ## 📁 Project Structure
 
 ```
-medicalsyc
+medicalsyc-2-main
 ├─ .env
 ├─ favicon.ico
 ├─ index.html
@@ -75,6 +75,8 @@ medicalsyc
 ├─ public
 │  ├─ assets
 │  │  └─ images
+│  │     ├─ favicon.ico
+│  │     ├─ logo.png
 │  │     └─ no_image.png
 │  ├─ favicon.ico
 │  ├─ manifest.json
@@ -105,7 +107,6 @@ medicalsyc
 │  │  ├─ admin-analytics
 │  │  │  ├─ components
 │  │  │  │  ├─ AnalyticsChart.jsx
-│  │  │  │  ├─ ColdChainMonitoring.jsx
 │  │  │  │  ├─ MetricsOverview.jsx
 │  │  │  │  ├─ PredictiveAnalytics.jsx
 │  │  │  │  ├─ SystemStatusPanel.jsx
@@ -125,7 +126,6 @@ medicalsyc
 │  │  ├─ login
 │  │  │  ├─ components
 │  │  │  │  ├─ LoginForm.jsx
-│  │  │  │  ├─ SecurityBadges.jsx
 │  │  │  │  ├─ TestCredentials.jsx
 │  │  │  │  └─ WelcomeHeader.jsx
 │  │  │  └─ index.jsx
@@ -152,13 +152,17 @@ medicalsyc
 │  │  │  │  ├─ MedicationTimeline.jsx
 │  │  │  │  └─ PatientHeader.jsx
 │  │  │  └─ index.jsx
-│  │  └─ pharmacy-dashboard
-│  │     ├─ components
-│  │     │  ├─ AnalyticsCharts.jsx
-│  │     │  ├─ ColdChainMonitoring.jsx
-│  │     │  ├─ EmergencyAlertsPanel.jsx
-│  │     │  ├─ InventoryOverview.jsx
-│  │     │  └─ RefillRequestsPanel.jsx
+│  │  ├─ pharmacy-dashboard
+│  │  │  ├─ components
+│  │  │  │  ├─ AnalyticsCharts.jsx
+│  │  │  │  ├─ EmergencyAlertsPanel.jsx
+│  │  │  │  ├─ InventoryOverview.jsx
+│  │  │  │  └─ RefillRequestsPanel.jsx
+│  │  │  └─ index.jsx
+│  │  └─ welcome
+│  │     ├─ background.css
+│  │     ├─ CombinedIllustration.jsx
+│  │     ├─ CustomCursor.jsx
 │  │     └─ index.jsx
 │  ├─ Routes.jsx
 │  ├─ styles
@@ -169,7 +173,8 @@ medicalsyc
 │     ├─ cn.js
 │     └─ prescriptionAnalysis.js
 ├─ tailwind.config.js
-└─ vite.config.mjsn
+├─ vercel.json
+└─ vite.config.mjs
 ```
 
 
